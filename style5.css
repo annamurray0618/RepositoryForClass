@@ -1,0 +1,162 @@
+/* REMINDER: this makes every element follow the border-box attribute 
+so our heights and widths in the style sheet are the sizes for the whole element */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* REMINDER: this removes all default browser margins and padding */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* The rules above fully reset our document so we don't need to worry about math */
+
+h1 {
+	text-align: center;
+}
+
+.navbar ul {
+	list-style-type: none;
+	background-color:darkolivegreen;
+	overflow: hidden;
+	display: flex;
+	justify-content: right;
+}
+
+.navbar a {
+	color: floralwhite;
+	text-decoration: none;
+	padding:15px;
+	display: block;
+	text-align: center;
+
+}
+
+.navbar a:hover {
+	background-color: black;
+}
+
+.navbar li {
+float:left;
+}
+
+.container {
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+main {
+	margin:10px 20px;
+	width: 100%;
+    gap: 20px; 
+}
+
+
+
+#headline {
+	margin-bottom: 30px;
+}
+
+h2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+#div1 {
+    flex: 1;
+    text-align: center;
+}
+
+.bodycopy {
+    font-family: "Roboto Condensed", sans-serif;
+	line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+
+	#borzoi1 #borzoi2 #greyhound { 
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+}
+
+#div2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+#borzoi1 {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#borzoi2 {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#greyhound {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    #div2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #borzoi1,
+    #borzoi2,
+    #greyhound {
+        width: 90%;
+    }
+}
+
+.button {
+	flex: 2;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+  background-color: darkolivegreen;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.namefooter {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+
+}
+
+
